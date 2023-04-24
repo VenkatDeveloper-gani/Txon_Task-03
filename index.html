@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-Do List App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List App</h1>
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <button id="addButton" onclick="addTask()">Add Task</button>
+        <div id="taskList"></div>
+        <div class="filter-container">
+            <button id="allButton" class="active" onclick="filterTasks('all')">All</button>
+            <button id="completedButton" onclick="filterTasks('completed')">Completed</button>
+            <button id="activeButton" onclick="filterTasks('active')">Active</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
